@@ -4,7 +4,50 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 body > div {
-  margin: 0 50px;
+  margin: 0px 50px 0 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header > div > img {
+  width: 60px;
+  height: 30px;
+}
+
+header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  margin: 0;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  width: 175px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+header > nav > ul > li > a:hover,
+header > nav > ul > li > a:active {
+  border-top: 5px solid #0065fc;
+  height: 90px;
+  color: #0065fc;
 }
