@@ -171,8 +171,8 @@ main > div:nth-child(5) > div > i {
 }
 
 section#Hébergements {
-  width: 800px;
-  margin-right: 80px;
+  width: 860px;
+  margin-right: 20px;
   padding: 10px 20px 50px 30px;
   background-color: #f2f2f2;
   border-radius: 20px;
@@ -182,10 +182,10 @@ aside {
   width: 420px;
   background-color: #f2f2f2;
   border-radius: 20px;
+  padding: 25px;
 }
 
-section#Hébergements > div > a > article > img,
-aside > a > article > img {
+section#Hébergements > div > a > article > img {
   width: 245px;
   height: 125px;
   object-fit: cover;
@@ -236,13 +236,85 @@ section#Hébergements div > a > article > h3,
 section#Hébergements div > a > article > p,
 section#Hébergements div > a > article > div {
   margin: 0 0px 0 20px;
-  
 }
 
 section#Hébergements div > a > article > h3 {
- padding: 20px 0 10px 0;
+  padding: 20px 0 10px 0;
 }
 
 section#Hébergements div > a > article > div {
   padding: 10px 0 20px 0;
+}
+
+aside > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside > div:nth-child(1) > h2 {
+  margin: 10px 0 60px 0;
+}
+
+aside > div:nth-child(1) > div > i {
+  color: #0065fc;
+}
+
+aside > a > article > img {
+  width: 170px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 20px 0px 0 20px;
+}
+
+aside > a > article {
+  background-color: #fff;
+  margin: 0 0 50px 0;
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+aside > a > article > div > div > h3,
+aside > a > article > div > div > p {
+  margin: 0 0 15px 0;
+  font-size: 0.9em;
+}
+
+aside > a > article > div {
+  padding: 5px;
+}
+
+aside > a > article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#Activités {
+  display: flex;
+  flex-direction: column;
+}
+
+section#Activités > div {
+  display: flex;
+}
+
+section#Activités > div > a > div > img {
+  width: 305px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+section#Activités > div > a {
+  text-decoration: none;
+  color: #000;
+  box-shadow: 2px 1px 8px 0px #ddd;
+  border-radius: 20px;
+  margin: 0 10px 0 0;
+}
+
+section#Activités > div > a > div > h3 {
+  padding: 0 0 0 20px;
 }
