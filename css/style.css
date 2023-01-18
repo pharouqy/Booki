@@ -211,7 +211,7 @@ section#Hébergements > div > a > article {
 }
 
 section#Hébergements > div > a,
-aside > a {
+aside > div > a {
   text-decoration: none;
   color: #000;
 }
@@ -260,14 +260,14 @@ aside > div:nth-child(1) > div > i {
   color: #0065fc;
 }
 
-aside > a > article > img {
+aside > div > a > article > img {
   width: 170px;
   height: 144px;
   object-fit: cover;
   border-radius: 20px 0px 0 20px;
 }
 
-aside > a > article {
+aside > div > a > article {
   background-color: #fff;
   margin: 0 0 50px 0;
   display: flex;
@@ -275,17 +275,17 @@ aside > a > article {
   border-radius: 20px;
 }
 
-aside > a > article > div > div > h3,
-aside > a > article > div > div > p {
+aside > div > a > article > div > div > h3,
+aside > div > a > article > div > div > p {
   margin: 0 0 15px 0;
   font-size: 0.9em;
 }
 
-aside > a > article > div {
+aside > div > a > article > div {
   padding: 5px;
 }
 
-aside > a > article > div {
+aside > div > a > article > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -298,6 +298,7 @@ section#Activités {
 
 section#Activités > div {
   display: flex;
+  justify-content: center;
 }
 
 section#Activités > div > a > div > img {
@@ -320,18 +321,23 @@ section#Activités > div > a > div > h3 {
 }
 
 footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 30px 0 0 0;
   width: 100%;
-  height: 150px;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px 0 20px 30px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 0 20px 0px;
 }
 
 footer > div {
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 30px;
 }
 
 footer > div > ul {
@@ -346,4 +352,153 @@ footer > div > ul > a {
 
 footer > div > ul > a > li {
   padding: 0 0 15px 0px;
+}
+
+@media all and (max-width: 992px) {
+  main > div:nth-child(6) {
+    flex-wrap: wrap;
+  }
+  aside {
+    width: 100%;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  aside > div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section#Activités > div > a {
+    display: block;
+    width: 20%;
+  }
+  section#Activités > div > a:not(:last-child) {
+    margin: 0 5% 0 0;
+  }
+  section#Activités > div > a > div > img {
+    width: 100%;
+    height: 195px;
+  }
+  body > div {
+    margin: 0px 20px 0 20px;
+  }
+  aside > div:nth-child(1) > h2 {
+    margin: 10px 0 15px 0;
+  }
+  section#Hébergements {
+    width: 100%;
+    margin-right: 0px;
+  }
+  aside > div > a > article {
+    margin: 0 0 0px 0;
+    width: 95%;
+  }
+  aside > div > a > article > img {
+    width: 150px;
+    height: 144px;
+  }
+  aside > div > a > article {
+    margin: 0 10px 0px 0;
+    width: 280px;
+  }
+  section#Hébergements > div {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    border: 2px solid greenyellow;
+  }
+  body > div {
+    margin: 0;
+  }
+  section#Activités > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  section#Activités > div > a {
+    margin: 0 0 15px 0;
+  }
+  section#Activités > div > a {
+    width: 90%;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  aside {
+    padding: 10px;
+  }
+  main > div > button {
+    display: none;
+  }
+  main > div > div#loupe {
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+  }
+  header > div {
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+  nav {
+    width: 100%;
+  }
+  header > nav > ul > li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  header > nav > ul > li:hover {
+    border-bottom: 5px solid #0065fc;
+  }
+  header > nav > ul {
+    padding: 0;
+  }
+  header > nav > ul > li > a:hover,
+  header > nav > ul > li > a:active {
+    border-top: unset;
+    color: #0065fc;
+  }
+  section#Hébergements > div > a > article {
+    width: 100%;
+  }
+  section#Hébergements {
+    padding: 0px 0px 0px 0px;
+  }
+  section#Hébergements > div > a > article > img {
+    width: 100%;
+  }
+  section#Hébergements > div > a {
+    margin: 0 0 20px 0;
+    width: 90%;
+  }
+  #Hébergements > div:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  main > div:nth-child(6) {
+    flex-direction: column-reverse;
+  }
+  aside {
+    padding: 0px;
+  }
+  aside > div:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+  }
+  aside > div > a {
+    margin-bottom: 15px;
+  }
+  section#Activités > div > a:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+  section#Hébergements > div > a > article {
+    margin-right: 0px;
+  }
 }
