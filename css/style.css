@@ -402,7 +402,7 @@ footer > div > ul > a > li {
   }
   aside > div > a > article {
     margin: 0 10px 0px 0;
-    width: 280px;
+    width: 90%;
   }
   section#Hébergements > div {
     flex-wrap: wrap;
@@ -488,6 +488,7 @@ footer > div > ul > a > li {
   }
   aside {
     padding: 0px;
+    border-radius: 0px;
   }
   aside > div:nth-child(2) {
     justify-content: center;
@@ -495,6 +496,8 @@ footer > div > ul > a > li {
   }
   aside > div > a {
     margin-bottom: 15px;
+    display: block;
+    width: 100%;
   }
   section#Activités > div > a:not(:last-child) {
     margin: 0 0 25px 0;
@@ -525,4 +528,7 @@ footer > div > ul > a > li {
   main > div:nth-child(4) > div a {
     margin-right: 0px;
   }
+  aside > div:nth-child(1) {
+    margin: 0px 10px 55px 10px;
+}
 }
