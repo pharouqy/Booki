@@ -204,6 +204,7 @@ section#Hébergements > div > a > article {
   margin-right: 15px;
   border-radius: 20px;
   padding: 5px;
+  box-shadow: 2px 1px 8px 0px #ddd;
 }
 
 #Hébergements > div:nth-child(2) {
@@ -250,10 +251,11 @@ aside > div:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 0 55px 0;
 }
 
 aside > div:nth-child(1) > h2 {
-  margin: 10px 0 60px 0;
+  margin: 10px 0 10px 0;
 }
 
 aside > div:nth-child(1) > div > i {
@@ -273,6 +275,7 @@ aside > div > a > article {
   display: flex;
   padding: 5px;
   border-radius: 20px;
+  box-shadow: 2px 1px 8px 0px #ddd;
 }
 
 aside > div > a > article > div > div > h3,
@@ -407,9 +410,6 @@ footer > div > ul > a > li {
 }
 
 @media all and (max-width: 768px) {
-  body {
-    border: 2px solid greenyellow;
-  }
   body > div {
     margin: 0;
   }
@@ -471,12 +471,13 @@ footer > div > ul > a > li {
   }
   section#Hébergements {
     padding: 0px 0px 0px 0px;
+    background-color: #fff;
   }
   section#Hébergements > div > a > article > img {
     width: 100%;
   }
   section#Hébergements > div > a {
-    margin: 0 0 20px 0;
+    margin: 0 10px 20px 0;
     width: 90%;
   }
   #Hébergements > div:nth-child(2) {
@@ -499,6 +500,29 @@ footer > div > ul > a > li {
     margin: 0 0 25px 0;
   }
   section#Hébergements > div > a > article {
+    margin-right: 0px;
+  }
+  section#Hébergements > h3 {
+    display: none;
+  }
+  aside > div > a > article {
+    margin: 0 10px 0px 10px;
+    max-width: 90%;
+  }
+  main > div:nth-child(4) > div div > span {
+    font-size: 0.8em;
+  }
+  body > div > main > div:nth-child(4) {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+  }
+  main > div:nth-child(4) > div div {
+    width: 150px;
+    text-align: unset;
+  }
+  main > div:nth-child(4) > div a {
     margin-right: 0px;
   }
 }
