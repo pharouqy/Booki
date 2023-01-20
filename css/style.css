@@ -215,6 +215,7 @@ section#Hébergements > div > a,
 aside > div > a {
   text-decoration: none;
   color: #000;
+  width: 33%;
 }
 
 p span {
@@ -401,8 +402,8 @@ footer > div > ul > a > li {
     height: 144px;
   }
   aside > div > a > article {
-    margin: 0 10px 0px 0;
-    width: 90%;
+    margin: 0 0px 0px 0;
+    width: 95%;
   }
   section#Hébergements > div {
     flex-wrap: wrap;
