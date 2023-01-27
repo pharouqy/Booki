@@ -349,12 +349,13 @@ footer > div > ul {
   padding: 0;
 }
 
-footer > div > ul > a {
+footer > div > ul > li > a {
   text-decoration: none;
   color: #000;
 }
 
-footer > div > ul > a > li {
+footer > div > ul > li > a {
+  display: block;
   padding: 0 0 15px 0px;
 }
 
@@ -510,7 +511,7 @@ footer > div > ul > a > li {
     display: none;
   }
   aside > div > a > article {
-    margin: 0 10px 0px 10px;
+    margin: 0 10px 0px 30px;
     max-width: 90%;
   }
   main > div:nth-child(4) > div div > span {
@@ -531,5 +532,5 @@ footer > div > ul > a > li {
   }
   aside > div:nth-child(1) {
     margin: 0px 10px 55px 10px;
-}
+  }
 }
