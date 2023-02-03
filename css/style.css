@@ -534,3 +534,15 @@ footer > div > ul > li > a {
     margin: 0px 10px 55px 10px;
   }
 }
+
+@media all and (max-width: 320px) {
+  header > nav > ul > li > a {
+    width: 150px;
+  }
+  main > div:nth-child(4) > div div {
+    width: 125px;
+  }
+  main > div:nth-child(4) > div div > span {
+    font-size: 0.6em;
+  }
+}
